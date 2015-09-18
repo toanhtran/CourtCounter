@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:layout_weight="match_parent"
+    android:layout_weight="1"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -78,6 +78,7 @@
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context=".MainActivity">
+            `
 
             <TextView
                 android:layout_width="match_parent"
@@ -127,7 +128,6 @@
                 android:onClick="addOneForTeamB"
                 android:text="Free throw" />
 
-            >
 
         </LinearLayout>
     </LinearLayout>
@@ -143,4 +143,4 @@
         android:onClick="resetScore"
         android:text="RESET" />
 
-</Button></RelativeLayout>
+</RelativeLayout>

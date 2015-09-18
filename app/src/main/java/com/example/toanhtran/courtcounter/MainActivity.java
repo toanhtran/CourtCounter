@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    /**
+     * Reset all scores to 0
+     * */
+    public void resetScore(View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 /**
  * Increase the score for Team A BY 3pts.
  * */
@@ -98,17 +107,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
-    /**
-     * Reset all scores to 0
-     * */
-    public void resetScore(View v){
-        displayForTeamA(0);
-        displayForTeamB(0);
 
-        scoreForTeamA = 0;
-        scoreForTeamB = 0;
-
-
-    }
     }
 
